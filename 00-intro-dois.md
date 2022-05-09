@@ -86,7 +86,7 @@ desktop by typing
 Now we'll use curl to grab web content.  Note that you can copy and paste these
 commands into your terminal window to save typing.
 
-    $ curl http://thinkchecksubmit.org/check/ -o think.html
+    $ curl https://thinkchecksubmit.org/journals/ -o think.html
     $ head think.html
 
 What is the format of the retrieved content? How would we view this content?
@@ -109,18 +109,32 @@ TIP: _Feel free to send yourself a copy of this useful handout on how to assess 
 
  What is the format of the retrieved content? 
 
-### Exercise 2b. Use either atom (with pretty-json)  or jq to pretty print the file for easier human reading.
+### Exercise 2b. Use any of the options below to pretty print the file for easier human reading.
 
-> #### Atom
->
-> Open your .json file in Atom. Click Packages/Pretty JSON/Prettify.  Now you
-> can save the formatted file as shen_pretty.json.  
->
-> OR
->
-> ####  jq
->
->    $ jq . shen.json > shen_pretty.json
+#### Online Tools
+
+ Open your .json file in an online JSON formatter. Examples:
+ 
+[Collapsible JSON Formatter](http://www.bodurov.com/JsonFormatter/)
+
+[DuckDuckGo](https://duckduckgo.com/?q=pretty+print+json&ia=answer)
+
+OR
+ 
+#### JSON file viewer
+Open your .json file in a desktop program. Examples:
+
+[Notepad ++](https://stackoverflow.com/questions/1560464/how-to-reformat-json-in-notepad/56072664#56072664)
+
+[Oxygen XML Editor](https://www.oxygenxml.com/xml_editor/json_editor.html)
+
+[Atom](https://atom.io/)
+
+OR
+
+#### jq
+
+    $ jq . shen.json > shen_pretty.json
 
 Now that you can read the file more easily, you should be able to answer the following questions:
 
@@ -175,12 +189,9 @@ resolved, and associated with valuable metadata including citation,
 availability of full text, funder information, licensing information, and more.
 The following components of the DOI System together make it work:
 
-+ The [International DOI Federation (IDF)](http://www.doi.org/doi_handbook/7_IDF.html)
-is responsible for the overall governance of the system. IDF is a not-for-profit membership
-organization that oversees the operations of the federation of Registration
-Agencies which provide Digital Object Identifier (DOI) services and
-registration. IDF is also the registration authority for the ISO standard (ISO
-26324) for the DOI system.
++ The [International DOI Federation (IDF)](http://www.doi.org/doi_handbook/7_IDF.html) is responsible for the overall governance of the system. IDF is a not-for-profit membership
+organization that oversees the operations of the federation of Registration Agencies which provide Digital Object Identifier (DOI) services and
+registration. IDF is also the registration authority for the ISO standard (ISO 26324) for the DOI system.
 + [Registration Agencies (RAs)](https://www.doi.org/registration_agencies.html)
 provide services to Registrants (or Members) — allocating DOI name prefixes,
 registering DOI names and providing the necessary infrastructure to allow
