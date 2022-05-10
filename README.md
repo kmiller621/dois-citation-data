@@ -17,8 +17,6 @@ Author Carpentry : Persistent access for research outputs with Digital Object Id
 * Identify components of a DOI
 * Apply basic UNIX curl commands to test and resolve DOIs for research objects
 * Explain how the DOI registration system is organized and what information it yields for authors
-* Register a DOI for a scholarly work using an open repository
-* Create appropriate metadata to describe a new work and mint a DOI for it
 * Retrieve the metadata associated with a DOI
 * Apply content negotiation commands to obtain a citation for a given DOI in a preferred style (e.g. BibTeX  or APA) from the CrossRef API
 * Gain experience with command line tools to:
